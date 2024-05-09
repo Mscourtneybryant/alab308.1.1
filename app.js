@@ -56,7 +56,59 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
 
 
+
+
+
   /** --------------- PART TWO: PRACTICAL MATH --------------*/
 
-  let distance = 1500
+  let totalDistance = 1500;
+  let carFuelEffciency55 = 30;
+  let fuelEffiency55 = 1500 / 30;
+  console.log(fuelEffiency55)
+
+
+  let carFuelEffciency60 = 28;
+  let fuelEffiency60 = 1500 / 28;
+  console.log(fuelEffiency60);
+
+
+  let carFuelEffciency75 = 23;
+  let fuelEffiency75 = 1500 / 23;
+  console.log(fuelEffiency75);
+
+  let fuelBudget = 175
+  let averageFuelCost = 3
+
+  const isFuelBudgetEnough = fuelBudget === averageFuelCost * 3;
+  console.log(isFuelBudgetEnough) 
+
+  const howMuchFuelCost55 = fuelEffiency55 * averageFuelCost;
+  console.log(howMuchFuelCost55)
+
+  const howMuchFuelCost60 = fuelEffiency60 * averageFuelCost;
+  console.log(howMuchFuelCost60)
+
+  const howMuchFuelCost75 = fuelEffiency75 * averageFuelCost;
+  console.log(howMuchFuelCost75)
+
+
+
+  if (howMuchFuelCost55 > fuelBudget){
+    console.log("You are over the fuel budget!")
+  }else{
+    console.log("You are within your fuel budget!")
+  }
+
+
+  if(howMuchFuelCost60 > fuelBudget){
+    console.log("You are over the fuel budget!")
+  }else{
+    console.log("You are within your fuel budget!")
+  }
+
   
+  if(howMuchFuelCost75 > fuelBudget){
+    console.log("You are over the fuel budget!")
+  }else{
+    console.log("You are within your fuel budget!")
+  }
