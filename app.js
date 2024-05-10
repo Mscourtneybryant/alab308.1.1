@@ -114,3 +114,17 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 fuelCosts(150)
 fuelCosts(161)
 fuelCosts(196)
+
+// HOW MANY HOURS WILL THE TRIP TAKE
+
+function milesPerHour(miles){
+  let totalDistance = 1500;
+
+  totalMiles = totalDistance / miles
+  console.log(`This trip will take ${totalMiles} miles to complete`)
+  
+}
+
+milesPerHour(55)
+milesPerHour(60)
+milesPerHour(75)
