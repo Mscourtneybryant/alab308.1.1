@@ -81,34 +81,36 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
   const isFuelBudgetEnough = fuelBudget === averageFuelCost * 3;
   console.log(isFuelBudgetEnough) 
+  
+
+  // GALLONS OF FUEL NEEDED FOR EACH TRIP
 
   const howMuchFuelCost55 = fuelEffiency55 * averageFuelCost;
   console.log(howMuchFuelCost55)
+  console.log(`You will need ${fuelEffiency55} gallons to complete this trip`)
 
   const howMuchFuelCost60 = fuelEffiency60 * averageFuelCost;
   console.log(howMuchFuelCost60)
+  console.log(`You will need ${fuelEffiency60} gallons to complete this trip`)
 
   const howMuchFuelCost75 = fuelEffiency75 * averageFuelCost;
   console.log(howMuchFuelCost75)
+  console.log(`You will need ${fuelEffiency75} gallons to complete this trip`)
 
 
 
-  if (howMuchFuelCost55 > fuelBudget){
+// BUDGET FOR THE TRIP
+  function fuelCosts (fuelAmount){
+
+  if (fuelAmount > fuelBudget){
     console.log("You are over the fuel budget!")
   }else{
     console.log("You are within your fuel budget!")
   }
 
 
-  if(howMuchFuelCost60 > fuelBudget){
-    console.log("You are over the fuel budget!")
-  }else{
-    console.log("You are within your fuel budget!")
-  }
+}
 
-  
-  if(howMuchFuelCost75 > fuelBudget){
-    console.log("You are over the fuel budget!")
-  }else{
-    console.log("You are within your fuel budget!")
-  }
+fuelCosts(150)
+fuelCosts(161)
+fuelCosts(196)
